@@ -1,3 +1,4 @@
+
 /* Header */
 header {
     width: 100%;
@@ -6,31 +7,48 @@ header {
 }
 #home header {
     background:  no-repeat lightgrey url(images/cliff_ocean.jpg);
-    background-size: 1500px;
+    background-size: cover;
 }
 .main-header {
-    background-color:rgb(255, 255, 255, 0.8) ;
-    width: 700px;
+    background-color:rgb(255, 255, 255, 0.8) ; 
     margin: 2em auto 0 auto;
     min-height: 100px;
-    height: 100px;
+    width: 75%;
+    /* display: flexbox; */
 }
-.main-header .logo img {
+/* .main-header .logo img {
     width: 100px;
     height: 100px;
     margin: 0 2em 0 0;
     float: left;
-}
-
+} */
+.logo {
+    position: relative;
+    width: 120px;
+    height: 100px;
+  }
+  .logo img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    right: 12px;
+  }
+#home .main-col-content {
+    border: 1px solid #C0C0C0; /* Homework Week 6 Day 2 */
+    padding: 25px;
+    min-height: 400px; /* Homework Week 6 Day 2 */
+  }
 /* Navigation */
 .main-menu {
-    margin-left: 227px;
     font-weight: 400;
+    margin: 0;
+    padding: 0 20px;
 }
 .main-menu ul li {
     list-style-type: none;
     display: inline-block;
-    float: left;
     padding-left: 25px;
     padding-right: 25px;
     border-left: 1px solid rgba(202, 204, 202, 0.6);
@@ -40,7 +58,7 @@ header {
 }
 .main-menu ul li a {
     text-decoration: none;
-    color: #888;
+    color: rgb(104, 104, 104);
 }
 .main-menu ul li a:hover {
     color: #9ed034;
@@ -50,8 +68,9 @@ header {
     border: none;
 }
 .main-menu ul li.active a {
-    color: #fff;
+    color: rgb(187, 187, 187);
 }
+
 
 /* Main */
 main {
@@ -74,7 +93,7 @@ section {
     background-color: #4288C3;
 }
 section #partners {  
-    width: 1200px;
+    width:100%;
     padding: 2em 0 2em 0;
     margin: 0 auto;
     text-align: center;
@@ -150,7 +169,7 @@ footer #nondisclaimer .social .fa-instagram {
 /* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
 
 /* Media Queries */
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
     footer #nondisclaimer .copy {
         padding: 3.5em 0em 3.5em 0em;
         text-align: center;
@@ -163,6 +182,9 @@ footer #nondisclaimer .social .fa-instagram {
         text-align: center;
         float: none;
       }
+      .navbar-main {
+        width: 85%;
+      }    
 }
 
 @media (max-width: 992px) {
@@ -171,13 +193,10 @@ footer #nondisclaimer .social .fa-instagram {
         bottom: 8px;
     }
     .main-menu {
-        width: 200px;
         background-color:rgb(255, 255, 255);
-        position: absolute;
-        right: 1.7em;
       }
       .main-menu ul li {
-        border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+        border-bottom: 1px solid rgb(202, 204, 202);
       }
       main {
         padding: 3em 1em 3em 1em;
@@ -188,4 +207,15 @@ footer #nondisclaimer .social .fa-instagram {
         min-height: 450px;
         margin-top: 1em;
       }
+}
+
+/* .intro{
+    border-style: solid;
+    border-width:0.5px;
+    margin: 10px 20px;
+}
+.location{
+    margin: 20px 10px;
+    border-style: solid;
+    border-width:0.5px;
 } */
