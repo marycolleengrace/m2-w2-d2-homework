@@ -185,6 +185,37 @@ footer #nondisclaimer .social .fa-instagram {
       .navbar-main {
         width: 85%;
       }    
+      header {
+        height: 400px;
+      }
+      .navbar-collapse {
+        display: block; /* Make sure it displays in collapsed mode */
+    }
+
+    .navbar {
+        position: relative;
+    }
+    
+    .navbar-toggler {
+        display: block; /* Show the hamburger icon */
+        color: white;
+        border: none;
+        padding: 10px;
+    }
+
+    /* Adjust menu items for mobile view */
+    .main-menu ul {
+        display: none; /* Hide menu items by default */
+    }
+    .navbar-collapse.collapse.show .main-menu ul {
+        display: block; /* Show menu items when navbar is expanded */
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    .main-menu ul li {
+        padding: 10px;
+        display: block; /* Stack items vertically */
+    }
 }
 
 @media (max-width: 992px) {
@@ -196,7 +227,11 @@ footer #nondisclaimer .social .fa-instagram {
         background-color:rgb(255, 255, 255);
       }
       .main-menu ul li {
+        display: block; /* Make each item a block element (vertical) */
+        width: 100%;    /* Ensure it takes full width */
+        padding: 15px 20px;
         border-bottom: 1px solid rgb(202, 204, 202);
+        
       }
       main {
         padding: 3em 1em 3em 1em;
@@ -207,6 +242,36 @@ footer #nondisclaimer .social .fa-instagram {
         min-height: 450px;
         margin-top: 1em;
       }
+      header {
+        height: 400px;
+    }
+    .navbar-collapse {
+        display: block; /* Make sure it displays in collapsed mode */
+    }
+
+    .navbar {
+        position: relative;
+    }
+    
+    .navbar-toggler {
+        display: block; /* Show the hamburger icon */
+        color: white;
+        border: none;
+        padding: 10px;
+    }
+
+    /* Adjust menu items for mobile view */
+    .main-menu ul {
+        display: none; /* Hide menu items by default */
+    }
+    .navbar-collapse.collapse.show .main-menu ul {
+        display: block; /* Show menu items when navbar is expanded */
+        text-align: center;
+    }
+    .main-menu ul li {
+        padding: 10px;
+        display: block; 
+    }
 }
 
 /* .intro{
